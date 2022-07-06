@@ -31,6 +31,7 @@ def flush_logs():
     open('logs.txt', 'w')
     open('rawlogs.txt', 'w')
     keys = []
+    return make_response('Ok', 200)
 
 @app.route('/api/close_client', methods=["GET"])
 def close_client():
