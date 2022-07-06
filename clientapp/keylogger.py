@@ -1,4 +1,5 @@
-import socket,time,os,sys,winreg, winreg as reg
+import socket,time,os,sys
+#import winreg, winreg as reg
 from pynput.keyboard import Key, Listener
 from threading import Thread
 
