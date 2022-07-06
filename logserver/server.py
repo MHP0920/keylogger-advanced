@@ -25,6 +25,13 @@ def make_client():
     t2.start()
     return make_response("Ok", 200)
 
+@app.route('/api/flush_logs')
+def flush_logs():
+    global keys
+    open('logs.txt', 'w')
+    open('rawlogs.txt', 'w')
+    keys = []
+
 @app.route('/api/close_client', methods=["GET"])
 def close_client():
     global handle

